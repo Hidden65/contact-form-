@@ -7,8 +7,9 @@
    </head>
    <body>
      <div class="container">
-       <form onsubmit="sendEmail(); reset (); return false;">
+       <form action="https://api.web3forms.com/submit" method="POST" onsubmit="sendEmail(); reset (); return false;">
          <h3>Get In Touch</h3>
+         <input type="hidden" name="access_key" value="d5cd370e-80a4-4487-aa03-9558feda6c36">
          <input type="text" id="name" placeholder="Your Name" required>
           <input type="email" id="email" placeholder="Email id" required>
           <input type="text" id="phone" placeholder="Phone no." required>
@@ -17,28 +18,6 @@
           
        </form>
      </div>
-     <script src="https://smtpjs.com/v3/smtp.js"></script>
-     <script>
-     				function sendEmail(){
-     				Email.send({
-     		Host:"smtp.elasticemail.com",
-     		Username:"sujiddake@gmail.com",
-     		Password:"0646B51D3880C44490409539E9E67EB0A9C7",
-     		
-
-  To :"haquesajid39@gmail.com",
- From :document.getElementById("email").value, 
-  Subject : "new contact form enquiry", 
-  Body : "Name:"+ document.getElementById("name").value +"<br> Email:" + document.getElementById("email").value
-+ "<br> Phone no:" +document.getElementById("phone").value
-+" <br> message:" + document.getElementById("message").value
-  }).then( 
-  message => alert("message sent successfully")
-   );
-
-
-
-     				}
-     </script>
+    
    </body>
  </html>
