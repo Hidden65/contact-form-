@@ -1,23 +1,29 @@
-<DOCTYPE html>
- <html>
-   <head>
-     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-     <title>contct form</title>
-     <link rel="stylesheet" href="style.css"
-   </head>
-   <body>
-     <div class="container">
-       <form action="https://api.web3forms.com/submit" method="POST" onsubmit="sendEmail(); reset (); return false;">
-         <h3>Get In Touch</h3>
-         <input type="hidden" name="access_key" value="d5cd370e-80a4-4487-aa03-9558feda6c36">
-         <input type="text" id="name" placeholder="Your Name" required>
-          <input type="email" id="email" placeholder="Email id" required>
-          <input type="text" id="phone" placeholder="Phone no." required>
-           <textarea id="message" rows="4"placeholder="how can i help you"></textarea>
-           <button type="submit">send</button>
-          
-       </form>
-     </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact form</title>
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+
+            </div>
+            <input type="hidden" name="access_key" value="d5cd370e-80a4-4487-aa03-9558feda6c36">
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="name" placeholder="Your email" class="contact-inputs" required>
+            <input type="massage" name="name" placeholder="Your massage" class="contact-inputs" required>
+            <button type="submit">submit</button>
+        </form>
+<div>
+
+</div>
+    </div>
     
-   </body>
- </html>
+</body>
+</html>
